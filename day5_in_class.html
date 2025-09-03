@@ -382,6 +382,38 @@ chunk like this:</p>
 <p>Note that the <code>echo = FALSE</code> parameter was added to the
 code chunk to prevent printing of the R code that generated the
 plot.</p>
+<pre class="r"><code># Pick two of your favorite numbers (between 1 and 100) and assign them to 
+# variables `fav_1` and `fav_2`
+fav_1 &lt;- 9
+fav_2 &lt;- 27
+
+# Divide each number by the square root of 201 and save the new value in the
+# original variable
+fav_1 &lt;- sqrt(fav_1)
+fav_2 &lt;- sqrt(fav_2)
+
+# Create a variable `raw_sum` that is the sum of the two variables. Use the 
+# `sum()` function for practice.
+raw_sum &lt;- fav_1 + fav_2
+
+
+# Create a variable `round_sum` that is the `raw_sum` rounded to 2 decimal places.
+# Use the `round()` function.
+round_sum &lt;- round(raw_sum, 2)
+
+# Create two new variables `round_1` and `round_2` that are your `fav_1` and 
+# `fav_2` variables rounded to 2 decimal places
+round_1 &lt;- round(fav_1, 2)
+round_2 &lt;- round(fav_2, 2)
+
+# Create a variable `sum_round` that is the sum of the rounded values
+sum_round &lt;- sum(round_1, round_2)
+
+# Print out both variables and compare. Are they the same?
+round_sum</code></pre>
+<pre><code>## [1] 8.2</code></pre>
+<pre class="r"><code>sum_round</code></pre>
+<pre><code>## [1] 8.2</code></pre>
 </div>
 
 
